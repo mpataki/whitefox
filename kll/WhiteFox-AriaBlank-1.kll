@@ -1,6 +1,7 @@
 Name = "WhiteFox";
+Variant = "aria";
 Layout = "AriaBlank";
-Base = "AllBlank";
+Base = "AriaBase";
 Version = "0.2";
 Author = "HaaTa (Jacob Alexander) 2015";
 KLL = "0.3c";
@@ -23,14 +24,15 @@ U"BACKSPACE" : SYS"SLEEP";
 U"P" : CONS"MUTE";
 U"LBRACE" : CONS"VOLUMEDOWN";
 U"RBRACE" : CONS"VOLUMEUP";
-U"DELETE" : ledControl( 5, 0, 0 );
 U"H" : U"LEFT";
 U"J" : U"DOWN";
 U"K" : U"UP";
 U"L" : U"RIGHT";
-U"PAGEUP" : ledControl( 4, 15, 0 );
+U"PAGEUP" : CONS"BRIGHTNESSINCREMENT";
 U"RSHIFT" : U"FUN2";
-U"PAGEDOWN" : ledControl( 3, 15, 0 );
+U"PAGEDOWN" : CONS"BRIGHTNESSDECREMENT";
 U"LEFT" : U"HOME";
 U"RIGHT" : U"END";
+
+
 

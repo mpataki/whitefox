@@ -1,11 +1,14 @@
 Name = "WhiteFox";
+Variant = "aria";
 Layout = "AriaBlank";
-Base = "AllBlank";
+Base = "AriaBase";
 Version = "0.2";
 Author = "HaaTa (Jacob Alexander) 2015";
 KLL = "0.3c";
 Date = "2016-05-30";
 Generator = "KIICONF 0.2";
+
+
 
 U"ESC" : U"ESC";
 U"1" : U"1";
@@ -65,13 +68,19 @@ U"SLASH" : U"SLASH";
 U"RSHIFT" : U"RSHIFT";
 U"UP" : U"UP";
 U"PAGEDOWN" : U"PAGEDOWN";
-U"CTRL" : U"CTRL";
-U"FUNCTION1" : U"LALT";
+U"LCTRL" : U"FUN1";
+U"LGUI" : U"LALT";
 U"LALT" : U"LGUI";
 U"SPACE" : U"SPACE";
 U"RALT" : U"RGUI";
-U"GUI" : U"FUN1";
+U"FUNCTION1" : U"RALT";
 U"LEFT" : U"LEFT";
 U"DOWN" : U"DOWN";
 U"RIGHT" : U"RIGHT";
+
+
+
+A[all_on] <= start, pfunc:interp;
+A[all_on, 1] <= P[c:0%](255), P[c:100%](255);
+
 

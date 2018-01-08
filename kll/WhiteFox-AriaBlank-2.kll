@@ -1,6 +1,7 @@
 Name = "WhiteFox";
+Variant = "aria";
 Layout = "AriaBlank";
-Base = "AllBlank";
+Base = "AriaBase";
 Version = "0.2";
 Author = "HaaTa (Jacob Alexander) 2015";
 KLL = "0.3c";
@@ -10,6 +11,6 @@ Generator = "KIICONF 0.2";
 U"P" : CONS"PAUSEPLAY";
 U"LBRACE" : CONS"SCANPREVIOUSTRACK";
 U"RBRACE" : CONS"SCANNEXTTRACK";
-U"PAGEUP" : CONS"BRIGHTNESSINCREMENT";
-U"PAGEDOWN" : CONS"BRIGHTNESSDECREMENT";
+
+
 

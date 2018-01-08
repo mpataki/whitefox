@@ -1,14 +1,18 @@
 {
     "header": {
         "Name": "WhiteFox",
+        "Variant": "aria",
         "Layout": "AriaBlank",
-        "Base": "AllBlank",
+        "Base": "AriaBase",
         "Version": "0.2",
         "Author": "HaaTa (Jacob Alexander) 2015",
         "KLL": "0.3c",
         "Date": "2016-05-30",
         "Generator": "KIICONF 0.2"
     },
+    "defines": [
+
+    ],
     "matrix": [
         {
             "code": "0x00",
@@ -473,10 +477,6 @@
                 "0": {
                     "key": "DELETE",
                     "label": "DEL"
-                },
-                "1": {
-                    "key": "#:ledControl( 5, 0, 0 )",
-                    "label": "LED OFF"
                 }
             }
         },
@@ -662,10 +662,6 @@
                 "0": {
                     "key": "ENTER",
                     "label": "\u21b5"
-                },
-                "3": {
-                    "key": "#:flashMode()",
-                    "label": "FLASH"
                 }
             }
         },
@@ -681,10 +677,6 @@
                     "label": "PGUP"
                 },
                 "1": {
-                    "key": "#:ledControl( 4, 15, 0 )",
-                    "label": "LED+"
-                },
-                "2": {
                     "key": "CONS:BRIGHTNESSINCREMENT",
                     "label": "SCRN+"
                 }
@@ -875,10 +867,6 @@
                     "label": "PGDN"
                 },
                 "1": {
-                    "key": "#:ledControl( 3, 15, 0 )",
-                    "label": "LED-"
-                },
-                "2": {
                     "key": "CONS:BRIGHTNESSDECREMENT",
                     "label": "SCRN-"
                 }
@@ -892,8 +880,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "CTRL",
-                    "label": "LCTRL"
+                    "key": "FUN1",
+                    "label": "\u01921"
                 }
             }
         },
@@ -957,8 +945,8 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "FUN1",
-                    "label": "\u01921"
+                    "key": "RALT",
+                    "label": "RALT"
                 }
             }
         },
@@ -1009,5 +997,19 @@
                 }
             }
         }
-    ]
+    ],
+    "leds": [
+
+    ],
+    "custom": {
+
+    },
+    "animations": {
+        "all_on": {
+            "settings": "start, pfunc:interp",
+            "frames": [
+                "P[c:0%](255), P[c:100%](255)"
+            ]
+        }
+    }
 }
