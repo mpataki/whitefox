@@ -1,6 +1,6 @@
 
 ### Installation:
-- Install the dfu utility with `brew install dfu-util`.
+- Install the dfu utility with `brew install dfu-util` on macos, or `pacman -S dfu-util` on arch.
 - Install the firmware with `dfu-util -D kiibohd.dfu.bin`.
 
-For instruction on how to flash the firmware on other operating systems, see [this page](https://github.com/kiibohd/controller/wiki/Loading-DFU-Firmware#mac-osx).
+more detailed instructions here: [whitefox configurator](https://input.club/configurator-whitefox/)
